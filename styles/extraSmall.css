@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+/* LIGHT THEME  */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    transition: .4s linear;
+}
+
+.wrapper button.theme-changer {
+    position: relative;
+    margin: 10% 0 0 0;
+    padding: 2px 10px;
+    border: 2px solid #444;
+    background-color: transparent;
+    color: #444;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.wrapper button.theme-changer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    transition: .3s ease-in-out;
+}
+
+.wrapper button.theme-changer:hover:after {
+    right: 0;
+}
+
+.wrapper button.theme-changer:hover {
+    border: 2px solid #ccc;
+    color: #ccc;
+}
+
+.wrapper button.theme-changer span {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.wrapper .last-time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper .last-time h2 {
+    color: #444;
+    font-size: 2rem;
+}
+
+.wrapper .last-time p {
+    color: #444;
+    font-size: 1.6rem;
+}
+
+.wrapper .stopwatch {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.wrapper .stopwatch .time {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    border: 2px solid white;
+    background-color: #666;
+    border-radius: 10%;
+}
+
+.wrapper .stopwatch .time p {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.wrapper .stopwatch .handle {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 30px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 50% 50% 0 0;
+}
+
+.wrapper .stopwatch button.start {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform: rotate(-30deg);
+    width: 30px;
+    height: 20px;
+    border: 2px solid black;
+    background-color: #666;
+    font-size: .6rem;
+    cursor: pointer;
+}
+
+.wrapper .stopwatch button.reset {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    transform: rotate(30deg);
+    width: 30px;
+    height: 20px;
+    border: 2px solid black;
+    background-color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.wrapper .stopwatch :nth-child(4) {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 20px;
+    background-color: white;
+}
+
+.wrapper .stopwatch :nth-child(5) {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: white;
+}
+
+.wrapper .stopwatch :nth-child(6) {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: white;
+}
+
+.wrapper .stopwatch :nth-child(7) {
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+}
+
+
+.wrapper .stopwatch .hand {
+    width: 4px;
+    height: calc(50% - 10px);
+    background-color: white;
+    margin-left: calc(50% - 2px);
+    position: relative;
+    transform-origin: 50% 100%;
+    border-radius: 50% 50% 0 0;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+.wrapper footer {
+    width: 100%;
+    padding: 1% 0;
+    border-top: 2px solid #444;
+    text-align: center;
+}
+
+.wrapper footer p {
+    color: #444;
+    font-size: 1.4rem;
+}
+
+
+/* DARK THEME  */
+
+.wrapper.dark-theme {
+    background-color: #111;
+}
+
+.wrapper.dark-theme button.theme-changer {
+    border: 2px solid #ccc;
+    color: #ccc;
+}
+
+.wrapper.dark-theme button.theme-changer:after {
+    background-color: #ccc;
+}
+
+.wrapper.dark-theme button.theme-changer:hover {
+    border: 2px solid #444;
+    color: #444;
+}
+
+.wrapper.dark-theme .last-time h2 {
+    color: #ccc;
+}
+
+.wrapper.dark-theme .last-time p {
+    color: #ccc;
+}
+
+.wrapper.dark-theme .stopwatch {
+    border: 3px solid white;
+    background-color: #ccc;
+}
+
+.wrapper.dark-theme .stopwatch .time {
+    border: 2px solid black;
+    background-color: #eee;
+}
+
+.wrapper.dark-theme .stopwatch .time p {
+    color: black;
+}
+
+.wrapper.dark-theme .stopwatch .handle {
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+}
+
+.wrapper.dark-theme .stopwatch button.start {
+    border: 2px solid white;
+    background-color: #eee;
+}
+
+.wrapper.dark-theme .stopwatch button.reset {
+    border: 2px solid white;
+    background-color: #eee;
+}
+
+.wrapper.dark-theme .stopwatch :nth-child(4) {
+    background-color: black;
+}
+
+.wrapper.dark-theme .stopwatch :nth-child(5) {
+    background-color: black;
+}
+
+.wrapper.dark-theme .stopwatch :nth-child(6) {
+    background-color: black;
+}
+
+.wrapper.dark-theme .stopwatch :nth-child(7) {
+    background-color: black;
+}
+
+.wrapper.dark-theme .stopwatch .hand {
+    background-color: black;
+}
+
+.wrapper.dark-theme footer {
+    border-top: 2px solid #ccc;
+}
+
+.wrapper.dark-theme footer p {
+    color: #ccc;
+}

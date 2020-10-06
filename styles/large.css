@@ -1,0 +1,15 @@
+/* LIGHT THEME  */
+
+@media(min-width:1200px) {
+    .wrapper button.theme-changer {
+        margin: 2% 0 0 0;
+    }
+
+    .wrapper footer {
+        padding: 7px 0;
+    }
+
+    .wrapper footer p {
+        font-size: 2rem;
+    }
+}

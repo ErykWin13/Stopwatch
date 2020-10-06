@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Prosty stoper napisany w HTML, CSS i javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/extraSmall.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="theme-changer">
+            <span>Zmień motyw na ciemny</span>
+        </button>
+        <div class="last-time">
+            <h2>Ostatni czas:</h2>
+            <p>---</p>
+        </div>
+        <div class="stopwatch">
+            <div class="handle"></div>
+            <button class="start">Start/Stop</button>
+            <button class="reset">Reset</button>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="hand"></div>
+            <div class="time">
+                <p>
+                    <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">00</span>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p>StopWatch &copy; by Eryk Winnicki</p>
+        </footer>
+    </div>
+    <script src="javascript/stopwatchScript.js"></script>
+</body>
+
+</html>

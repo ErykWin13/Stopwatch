@@ -1,0 +1,71 @@
+@media(min-width:768px) {
+    .wrapper button.theme-changer {
+        font-size: 1.8rem;
+    }
+
+    .wrapper .last-time h2 {
+        font-size: 2.5rem;
+    }
+
+    .wrapper .last-time p {
+        font-size: 1.8rem;
+    }
+
+    .wrapper .stopwatch {
+        width: 350px;
+        height: 350px;
+    }
+
+    .wrapper .stopwatch .time p {
+        font-size: 2.3rem;
+    }
+
+    .wrapper .stopwatch .handle {
+        top: -40px;
+        width: 50px;
+        height: 40px;
+    }
+
+    .wrapper .stopwatch button.start {
+        width: 40px;
+        height: 30px;
+        font-size: .9rem;
+    }
+
+    .wrapper .stopwatch button.reset {
+        width: 40px;
+        height: 30px;
+        font-size: 1.3rem;
+    }
+
+    .wrapper .stopwatch :nth-child(4) {
+        width: 4px;
+        height: 25px;
+    }
+
+    .wrapper .stopwatch :nth-child(5) {
+        width: 25px;
+        height: 4px;
+    }
+
+    .wrapper .stopwatch :nth-child(6) {
+        width: 4px;
+        height: 25px;
+    }
+
+    .wrapper .stopwatch :nth-child(7) {
+        width: 25px;
+        height: 4px;
+    }
+
+    .wrapper .stopwatch .hand {
+        width: 6px;
+        height: calc(50% - 20px);
+        margin-left: calc(50% - 3px);
+        margin-top: 20px;
+    }
+
+    .wrapper footer p {
+        font-size: 1.8rem;
+    }
+}
